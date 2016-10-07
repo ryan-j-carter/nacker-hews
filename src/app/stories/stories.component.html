@@ -1,0 +1,14 @@
+<div class="main-content">
+
+    <div *ngIf="items">
+        <ol class="stories" start="{{ listStart }}">
+            <li *ngFor="let item of items" class="post">
+                <item class="item-block" [item]="item"></item>
+            </li>
+        </ol>
+        <div class="paginate">
+            <a *ngIf="listStart != 1" [routerLink]="['/' + storyType, pageNum - 1]">&lt; Prev</a>
+            <a *ngIf="items.length === 30" [routerLink]="['/' + storyType, pageNum + 1]">More &gt;</a>
+        </div>
+    </div>
+</div>

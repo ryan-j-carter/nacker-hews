@@ -1,0 +1,48 @@
+@import '../../assets/less/variables';
+
+header {
+    display:flex;
+    align-items:center;
+    padding:0.2em 1em;
+    background-color:@red;
+    color:white;
+
+    .home-link {
+        margin-right:0.3em;
+        .logo {
+            width:50px;
+        }
+    }
+    .name {
+
+    }
+    nav {
+        display:inline-flex;
+        align-items:center;
+        a {
+            min-width:50px;
+            text-align:center;
+            &:hover {
+                font-weight:bold;
+            }
+        }
+    }
+    .info {
+        flex-grow:1;
+        text-align:right;
+        a {
+            font-weight:bold;
+        }
+    }
+
+    @media (max-width: 768px) {
+        justify-content:space-between;
+        .name, .info {
+            display:none;
+        }
+    }
+}
+
+a {
+    color:white;
+}

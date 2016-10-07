@@ -1,0 +1,32 @@
+@import '../../assets/less/variables';
+
+.meta {
+    font-size:14px;
+    font-weight:bold;
+    color:@grey;
+    margin-top:1em;
+    .collapse {
+        font-family:"Courier New", monospace;
+        cursor:pointer;
+    }
+    a {
+        color:@red;
+        &:hover {
+            text-decoration:underline;
+        }
+    }
+}
+.comment-tree {
+    margin-left:25px;
+
+    .subtree {
+        list-style:none;
+    }
+}
+p:not(.comment-text) {
+    padding-top:0.6em;
+    line-height:1.4;
+}
+.deleted-meta {
+
+}

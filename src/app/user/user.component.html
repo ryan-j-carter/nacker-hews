@@ -1,0 +1,9 @@
+<div class="main-content" *ngIf="user">
+    <h2 class="user-id">{{user.id}}</h2>
+    <h2 class="user-karma">{{user.karma}}&nbsp;&#x2605;</h2>
+    <div class="user-created">Created {{user.created}}</div>
+    <p class="user-about" [innerHTML]="user.about"></p>
+</div>
+<div class="main-content" *ngIf="error">
+    <h3 class="user-error">{{error}}</h3>
+</div>

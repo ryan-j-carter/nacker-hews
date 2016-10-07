@@ -1,0 +1,5 @@
+<div class="main-content" *ngIf="item">
+    <item [item]="item"></item>
+    <p class="subject" [innerHTML]="item.content"></p>
+    <app-comment-tree [commentTree]="item.comments"></app-comment-tree>
+</div>

@@ -1,0 +1,37 @@
+/* Global Styles (normalization) */
+
+// Only using * selector because :host and direct styles in the component aren't working
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    line-height:1;
+    font-weight:normal;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+footer, header, nav, section {
+    display:block;
+}
+
+a {
+    background:transparent;
+    text-decoration:none;
+    &:active, &:hover {
+        outline:0;
+    }
+}
+
+img {
+    border:0;
+}
+
+button, input, a, span {
+    color: inherit;
+    font: inherit;
+}

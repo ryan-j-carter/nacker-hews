@@ -1,0 +1,31 @@
+@import '../../assets/less/variables';
+
+.main-content {
+    padding:1.2em 40px 1em 40px;
+    position:relative;
+    .user-id {
+        color:@red;
+        display:inline-block;
+        margin-bottom: 0.3em;
+    }
+    .user-karma {
+        color:@red;
+        float:right;
+    }
+    .user-created {
+        color:@grey;
+        font-size:14px;
+        font-weight:bold;
+    }
+    .user-about {
+        margin-top:0.3em;
+    }
+    .user-error {
+        color: @red;
+    }
+}
+
+p:not(.user-about) {
+    padding-top:0.6em;
+    line-height:1.4;
+}

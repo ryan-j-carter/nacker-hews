@@ -1,0 +1,26 @@
+@import '../../assets/less/variables';
+
+.item {
+    p {
+        margin-bottom:0.45em;
+        .title {
+            color:@dark-grey;
+        }
+        .domain {
+            color:@grey;
+            font-weight:bold;
+            font-size:14px;
+        }
+    }
+    .subtext {
+        color:@grey;
+        font-weight:bold;
+        font-size:13px;
+        a {
+            color:@red;
+            &:hover {
+                text-decoration:underline;
+            }
+        }
+    }
+}
